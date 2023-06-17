@@ -5,32 +5,34 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Georgia;
+
 }
+
+
 
 body{
-
     display: flex;
     flex-wrap: wrap;
-
-background-color: rgb(221, 186, 116);
-
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(221, 186, 116);
 }
 
-.cabeca{
 
+.cabeca{
     color: rgb(231, 238, 245);
     font-size: large;
-    background-color: rgb(63, 41, 41);
+    background-color: rgb(116, 73, 73);
     width: 98.9vw;
     padding: 25px;
     text-align: center;
     display: flex;
     align-items: center;
-    
 }
 
+
 .home{
-    
     text-align: center;
     width: 200px;
     margin: 0px 30px;
@@ -38,20 +40,17 @@ background-color: rgb(221, 186, 116);
     left: 20px;
 }
 
-.pedidos{
 
-   
+.pedidos{
     text-align: center;
     width: 200px;
     margin: 0px 30px ;
     left: 620px;
     position: absolute;
-
 }
 
-.informacoes{
 
-   
+.informacoes{
     text-align: center;
     width: 200px;
     margin: 0px 30px;
@@ -59,28 +58,23 @@ background-color: rgb(221, 186, 116);
     position: absolute;
 }
 
-.container{
 
+.container{
     width: 100vw;
     height: 600px;
-
 }
 
+
 .imgtopo{
-
-
     position: relative;
     text-align: center;
     height: 600px;
     background-image: url(/img/Untitled-16.png);
     background-size: cover;
-    
-
-
 }
 
-.temapizzaria{
 
+.temapizzaria{
     color: aliceblue;
     font-family: Georgia;
     background-color: rgb(142, 110, 104);
@@ -89,89 +83,129 @@ background-color: rgb(221, 186, 116);
     padding: 4rem;
     font-size: 20px;
     opacity: 80%;
-
 }
 
-.pizza1{
 
+
+
+/* estilização da pizza de calabresa*/
+
+.pizza1{
     display: flex;
-    background-color: rgb(215, 209, 209);
+    background-color: rgb(215, 209, 209);                   /*div que agrupa todo o tamanho da pizza*/
     width: 100vw;
     height: 600px;
     position: relative;
-
 }
 
-.infopizza1{
 
+.img_dir1{
+    position: relative;
+    background-image: url(/img/calabresa2.jpg);                   /*imagem estatica que fica do lado direito*/
+    background-size: cover;
+    opacity: 20%;
+    border-radius: 20px;
+    width: 630px;
+    height: 560px;
+    right: 1px;
+    margin: 20px;
+}
+
+
+.infopizza1{
     width: 800px;
     border-radius: 15px;
     margin: 20px;
-    background-image: url(/img/calabresa2.jpg);
+    background-image: url(/img/calabresa2.jpg);              /*imagem do fundo dos engredientes da pizza lado esquerdo*/
     background-size: cover;
-    opacity: 20%;
-    
-
+    opacity: 25%;
 }
+
+
+.descricao1{
+    position: absolute;
+    height: 560px;
+    width: 800px;                                             /*div destinada ao texto de informações da pizza*/
+    margin: 20px;                                   
+    padding: 40px;                                                    /*ingredientes que foram utilizado */
+    color: black;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 45px;   
+}
+
 
 .txp1{
-
-position: absolute;
-top: 170px;
-left: 160px;
-opacity: 100%;
-width: 500px;
-height: 300px;
-border-radius: 15px;
-text-align: center;
-
-font-size: 70px;
-
+    position: absolute;
+    top: 190px;
+    left: 930px;                                          /*descrição do nome da pizza*/
+    opacity: 100%;
+    width: 500px;                                         /*texto do lado direito*/
+    height: 300px;
+    border-radius: 15px;                                    /*pizza de calabresa*/
+    text-align: center;
+    font-size: 70px;
 }
 
-.imgp1{
 
+.imgp1{
     position: absolute;
-    opacity: 10%;
+    opacity: 100%;
     height: 560px;
     width: 800px;
     border-radius: 20px;
     margin: 20px;
-    background-image: url(/img/calabresa2.jpg);
-    
+    background-image: url(/img/calabresa2.jpg);               /*imagem estatica para ser movida no houver*/
+    background-size: cover;
     transition-timing-function: ease;
     transition-duration: 2s;
 }
 
-.imgp1:hover{
 
+.imgp1:hover{
     border-radius: 20px;
     width: 630px;
     height: 560px;
+    margin: 20px;                                       /*imagem animada, utilizada para abrir e fechar a visualização*/
     text-align: center;
-    transform: translateX(840px);
+    transform: translateX(840px);                               /*dos engredientes da pizza*/
     background-image: url(/img/calabresa2.jpg);
-    opacity: 100%;
-
+    opacity: 20%;
 }
 
 
 
 
 
-.pizza2{
 
+
+
+/* estilização da pizza quatro queijos*/
+
+.pizza2{
     display: flex;
-    background-color: rgb(215, 209, 209);
+    background-color: rgb(215, 209, 209);     /*div que agrupa todo o tamanho da pizza*/
     width: 100vw;
     height: 600px;
     position: relative;
 }
 
-.infopizza2{
-
+.img_dir2{
     position: absolute;
-    background-image: url(/img/pizza-pizzaria.jpg);
+    background-image: url(/img/pizza-pizzaria.jpg);  /*imagem estatica que fica do lado esquerdo*/
+    background-size: cover;
+    opacity: 30%;                                       /*imagem de fundo do nome da pizza*/
+    border-radius: 20px;
+    width: 630px;
+    height: 560px;
+    right: 848px;
+    margin: 20px;
+}
+
+.infopizza2{
+    position: absolute;
+    background-image: url(/img/pizza-pizzaria.jpg);  /*imagem de fundo dos engredientes da pizza lado direito*/
     background-size: cover;
     opacity: 20%;
     height: 560px;
@@ -179,144 +213,189 @@ font-size: 70px;
     right: 13px;
     border-radius: 15px;
     margin: 20px;
-    
-    
+}
+
+.descricao2{
+    position: absolute;
+    height: 560px;
+    width: 800px;
+    right: 13px;                                   /*div destinada ao texto de informações da pizza*/
+    margin: 20px;                                   
+    padding: 40px;                                     /*ingredientes que foram utilizado na pizza*/
+    color: black;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 45px;   
 }
 
 
 .txp2{
-
     position: absolute;
     top: 170px;
-    right: 160px;
-    opacity: 100%;
-    width: 500px;
+    /*right: 160px;*/
+    right: 935px;                                   /*texto do lado direito*/
+    opacity: 100%;                                                          
+    width: 500px;                                   /*descrição do nome da pizza*/
     height: 300px;
-    border-radius: 15px;
+    border-radius: 15px;                            /*pizza quatro queijos*/
     text-align: center;
-    
     font-size: 70px;
-    
 }
 
 .imgp2{
-
     position: absolute;
     border-radius: 15px;
     width: 800px;
     height: 560px;
     text-align: center;
-    background-image: url(/img/pizza-pizzaria.jpg);
+    background-image: url(/img/pizza-pizzaria.jpg);     /*imagem estatica para ser movida no houver*/
     background-size: cover;
-    opacity: 10%;
+    /*opacity: 10%;*/
+    opacity: 100%;
     margin: 20px;
     right: 13px;
 
     transition-timing-function: ease;
     transition-duration: 2s;
-    
-
 }
 
 .imgp2:hover{
-
     border-radius: 20px;
     width: 630px;
     height: 560px;
     text-align: center;
-    background-image: url(/img/pizza-pizzaria.jpg);
+    background-image: url(/img/pizza-pizzaria.jpg);     /*imagem animada, utilizada para abrir e fechar a visualização*/
     background-size: cover;
-    opacity: 100%;
+    /*opacity: 100%;*/                                      /*dos engredientes da pizza*/
+    opacity: 20%;
     margin: 20px;
     right: -13px;
     transform: translateX(-860px);
-    
-
 }
 
 
-.pizza3{
 
+
+
+
+/* estilização da pizza de COGULEMO*/
+
+.pizza3{
     display: flex;
-    background-color: rgb(215, 209, 209);
+    background-color: rgb(215, 209, 209);                   /*div que agrupa todo o tamanho da pizza*/
     width: 100vw;
     height: 600px;
     position: relative;
-
 }
 
-.infopizza3{
 
+.img_dir3{
+    position: relative;
+    background-image: url(/img/cogumelo.jpg);                   /*imagem estatica que fica do lado direito*/
+    background-size: cover;
+    opacity: 20%;
+    border-radius: 20px;
+    width: 630px;
+    height: 560px;
+    right: 1px;
+    margin: 20px;
+}
+
+
+.infopizza3{
     width: 800px;
     border-radius: 15px;
     margin: 20px;
-    background-image: url(/img/cogumelo.jpg);
+    background-image: url(/img/cogumelo.jpg);              /*imagem do fundo dos engredientes da pizza lado esquerdo*/
     background-size: cover;
-    opacity: 20%;
-    
-
+    opacity: 25%;
 }
+
+
+.descricao3{
+    position: absolute;
+    height: 560px;
+    width: 800px;                                             /*div destinada ao texto de informações da pizza*/
+    margin: 20px;                                   
+    padding: 40px;                                                    /*ingredientes que foram utilizado */
+    color: black;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 45px;   
+}
+
 
 .txp3{
-
-position: absolute;
-top: 170px;
-left: 160px;
-opacity: 100%;
-width: 500px;
-height: 300px;
-border-radius: 15px;
-text-align: center;
-font-size: 70px;
-
+    position: absolute;
+    top: 190px;
+    left: 930px;                                          /*descrição do nome da pizza*/
+    opacity: 100%;
+    width: 500px;                                         /*texto do lado direito*/
+    height: 300px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 70px;
 }
-
 
 
 .imgp3{
-
     position: absolute;
-    opacity: 10%;
+    opacity: 100%;
     height: 560px;
     width: 800px;
     border-radius: 20px;
     margin: 20px;
-    background-image: url(/img/cogumelo.jpg);
+    background-image: url(/img/cogumelo.jpg);               /*imagem estatica para ser movida no houver*/
     background-size: cover;
     transition-timing-function: ease;
     transition-duration: 2s;
 }
 
-.imgp3:hover{
 
+.imgp3:hover{
     border-radius: 20px;
     width: 630px;
     height: 560px;
-    margin: 20px;
+    margin: 20px;                                       /*imagem animada, utilizada para abrir e fechar a visualização*/
     text-align: center;
-    transform: translateX(840px);
+    transform: translateX(840px);                               /*dos engredientes da pizza*/
     background-image: url(/img/cogumelo.jpg);
-    opacity: 100%;
-
+    opacity: 20%;
 }
 
 
 
 
 
-.pizza4{
 
+
+/* estilização da pizza a moda da casa*/
+
+.pizza4{
     display: flex;
-    background-color: rgb(215, 209, 209);
+    background-color: rgb(215, 209, 209);     /*div que agrupa todo o tamanho da pizza*/
     width: 100vw;
     height: 600px;
     position: relative;
 }
 
-.infopizza4{
-
+.img_dir4{
     position: absolute;
-    background-image: url(/img/AI-PAPAI-PIZZA.jpg);
+    background-image: url(/img/moda_da_casa.jpg);  /*imagem estatica que fica do lado esquerdo*/
+    background-size: cover;
+    opacity: 20%;                                       /*imagem de fundo do nome da pizza*/
+    border-radius: 20px;
+    width: 630px;
+    height: 560px;
+    right: 848px;
+    margin: 20px;
+}
+
+.infopizza4{
+    position: absolute;
+    background-image: url(/img/moda_da_casa.jpg);  /*imagem de fundo dos engredientes da pizza lado direito*/
     background-size: cover;
     opacity: 20%;
     height: 560px;
@@ -324,63 +403,74 @@ font-size: 70px;
     right: 13px;
     border-radius: 15px;
     margin: 20px;
-    
-    
+}
+
+.descricao4{
+    position: absolute;
+    height: 560px;
+    width: 800px;
+    right: 13px;                                   /*div destinada ao texto de informações da pizza*/
+    margin: 20px;                                   
+    padding: 40px;                                     /*ingredientes que foram utilizado na pizza*/
+    color: black;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 45px;   
 }
 
 
 .txp4{
-
     position: absolute;
     top: 170px;
-    right: 160px;
-    opacity: 100%;
-    width: 500px;
+    /*right: 160px;*/
+    right: 935px;                                   /*texto do lado direito*/
+    opacity: 100%;                                                          
+    width: 500px;                                   /*descrição do nome da pizza*/
     height: 300px;
-    border-radius: 15px;
+    border-radius: 15px;                            /*pizza a moda de cogumelo*/
     text-align: center;
-    
     font-size: 70px;
-    
 }
 
 .imgp4{
-
     position: absolute;
     border-radius: 15px;
     width: 800px;
     height: 560px;
     text-align: center;
-    background-image: url(/img/AI-PAPAI-PIZZA.jpg);
+    background-image: url(/img/moda_da_casa.jpg);     /*imagem estatica para ser movida no houver*/
     background-size: cover;
-    opacity: 10%;
+    /*opacity: 10%;*/
+    opacity: 100%;
     margin: 20px;
     right: 13px;
 
     transition-timing-function: ease;
     transition-duration: 2s;
-    
-
 }
 
 .imgp4:hover{
-
     border-radius: 20px;
     width: 630px;
     height: 560px;
     text-align: center;
-    background-image: url(/img/AI-PAPAI-PIZZA.jpg);
+    background-image: url(/img/moda_da_casa.jpg);     /*imagem animada, utilizada para abrir e fechar a visualização*/
     background-size: cover;
-    opacity: 100%;
+    /*opacity: 100%;*/                                      /*dos engredientes da pizza*/
+    opacity: 20%;
     margin: 20px;
     right: -13px;
     transform: translateX(-860px);
-    
-
 }
 
+
+
+
+/*rodape, endereço rd1, sobre rd2, ouvidoria rd3*/
+
 .rodape{
-    background-color: black;
+    background-color: #a1675b;
     width: 98.9vw;
     height: 500px;
     display: flex;
@@ -388,9 +478,8 @@ font-size: 70px;
     
 }
 
-.rd1{
 
-    
+.rd1{
     height: 460px;
     width: 420px;
     margin: 15px;
@@ -400,11 +489,12 @@ font-size: 70px;
     border: 2px solid white;
     text-align: center;
     color: white;
+    background-color:#a85c4c;
 }
 
-.rd2{
 
-    
+
+.rd2{    
     height: 460px;
     width: 420px;
     margin: 15px;
@@ -414,12 +504,11 @@ font-size: 70px;
     border: 2px solid white;
     text-align: center;
     color: white;
-
-
+    background-color: #a85c4c;
 }
 
-.rd3{
 
+.rd3{
     
     height: 460px;
     width: 420px;
@@ -430,8 +519,13 @@ font-size: 70px;
     text-align: center;
     color: white;
     border: 2px solid white;
-
+    background-color: #a85c4c;
 }
+
+
+
+
+/* botoes de imputs do rd3 (ouvidoria) */
 
 #email{
     margin-top: 50px;
