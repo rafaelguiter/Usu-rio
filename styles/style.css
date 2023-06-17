@@ -1,0 +1,251 @@
+body{
+    background-color: rgb(23,23,34);
+    color: white;
+    font-family: poppinsregular;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#title{
+    flex-direction: column;
+    line-height: 10px;
+
+}
+
+.in{
+
+color: white;
+transform-origin: center;
+transition: tranform 0.2s ease;
+text-decoration: none;
+
+}
+
+
+.ul{
+    display: flex;
+    position: absolute;
+    margin-left: 450px;
+    height: 40px;
+    width: 620px;
+}
+
+
+.almentar1{
+
+    transform-origin: center;
+    transition: tranform 0.2s ease;
+    position: relative;
+    margin-left: 40px;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 10px; 
+    position: absolute;
+    
+
+}
+
+.almentar1:hover{
+
+    transition: 0.3s;
+    font-size: 15px;
+    text-shadow: 0 0 10px white, 0 0 10px white, 0 0 10px rgb(255, 255, 255), 0 0 10px white;
+    
+}
+
+.almentar2{
+
+    transform-origin: center;
+    transition: tranform 0.2s ease;
+    position: relative;
+    margin-left: 110px;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 10px;
+    position: absolute;
+
+}
+
+.almentar2:hover{
+
+    transition: 0.3s;
+    font-size: 15px;
+    text-shadow: 0 0 10px white, 0 0 10px white, 0 0 10px rgb(255, 255, 255), 0 0 10px white;
+    
+}
+
+.almentar3{
+
+    transform-origin: center;
+    transition: tranform 0.2s ease;
+    position: relative;
+    margin-left: 200px;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 10px;
+    position: absolute;
+
+}
+
+.almentar3:hover{
+
+    transition: 0.3s;
+    font-size: 15px;
+    text-shadow: 0 0 10px white, 0 0 10px white, 0 0 10px rgb(255, 255, 255), 0 0 10px white;
+}
+
+.almentar4{
+
+    transform-origin: center;
+    transition: tranform 0.2s ease;
+    position: relative;
+    margin-left: 280px;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 10px;
+    position: absolute;
+
+}
+
+.almentar4:hover{
+
+    transition: 0.3s;
+    font-size: 15px;
+    text-shadow: 0 0 10px white, 0 0 10px white, 0 0 10px rgb(255, 255, 255), 0 0 10px white;
+    
+}
+
+
+
+
+
+
+
+.bt1{
+
+    position: absolute;
+    margin-left: 335px;
+    margin-top: 2px;
+    
+
+
+}
+
+#bt_ja_tenho_ct{
+
+    border: 2px solid rgb(132,14,201);
+    color: rgb(255, 255, 255);
+    width: 210px;
+    padding: 5px;
+    text-align: center;
+    margin-left: 30px;
+    border-radius: 30px;
+    text-shadow: 0 0 10px rgb(64,148,102), 0 0 10px rgb(64,148,102), 0 0 10px rgb(64,148,102), 0 0 10px rgb(64,148,102);
+    position: absolute;
+    text-decoration: none;
+}
+
+#bt_ja_tenho_ct:hover{
+    background-color: rgb(132,14,201);
+    color: white;
+    transition: 1s all;
+
+}
+
+
+
+
+
+
+
+h1{
+    font-weight: 200;
+
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 56px;
+    line-height: 10px;
+    font-family: poppinsmedium;
+    
+}
+
+span{
+    /*color: rgb(132,14,201);*/
+    color: rgb(64,148,102);
+    text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px rgb(255, 255, 255), 0 0 10px white;
+    
+}
+
+p{
+    line-height: 20px;
+    max-width: 450px;
+    text-align: justify;
+    
+}
+
+img{
+    width: 600px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+
+}
+
+#bt_envio{
+
+    width: 50%;
+    height: 50px;
+    background-color: rgb(132,14,201);
+    color: white;
+    font-weight: bold ;
+    text-align: center;
+    margin: 15px auto;
+}
+
+#bt_envio:hover{
+
+    cursor: pointer;
+}
+
+input{
+    border-radius: 25px;
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+
+}
+
+article{
+    position: relative;
+}
+
+.foto{
+
+    position: absolute;
+    margin-left: -20px;
+    margin-top: 110px;
+    transform: scaleX(-1);
+    z-index: -1;
+    scale: 1.1;
+
+}
