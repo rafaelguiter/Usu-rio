@@ -1,0 +1,235 @@
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia;
+}
+
+body{
+
+    display: flex;
+    flex-wrap: wrap;
+
+background-color: rgb(221, 186, 116);
+
+}
+
+.cabeca{
+
+    color: rgb(231, 238, 245);
+    font-size: large;
+    background-color: rgb(63, 41, 41);
+    width: 98.9vw;
+    padding: 25px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    
+}
+
+.home{
+    background-color: rgb(81, 113, 113);
+    text-align: center;
+    width: 200px;
+    margin: 0px 30px;
+    position: absolute;
+    left: 20px;
+}
+
+.pedidos{
+
+    background-color: red;
+    text-align: center;
+    width: 200px;
+    margin: 0px 30px ;
+    left: 620px;
+    position: absolute;
+
+}
+
+.informacoes{
+
+    background-color: blue;
+    text-align: center;
+    width: 200px;
+    margin: 0px 30px;
+    right: 20px;
+    position: absolute;
+}
+
+.container{
+
+    width: 100vw;
+    height: 600px;
+
+}
+
+.imgtopo{
+
+
+    position: relative;
+    text-align: center;
+    height: 600px;
+    background-image: url(/img/Untitled-16.png);
+    background-size: cover;
+    
+
+
+}
+
+.temapizzaria{
+
+    color: aliceblue;
+    font-family: Georgia;
+    background-color: rgb(142, 110, 104);
+    position: relative;
+    top: 200px;
+    padding: 4rem;
+    font-size: 20px;
+    opacity: 80%;
+
+}
+
+.pizza1{
+
+    display: flex;
+    background-color: rgb(215, 209, 209);
+    width: 100vw;
+    height: 600px;
+    position: relative;
+
+}
+
+.infopizza1{
+
+    width: 800px;
+    border-radius: 15px;
+    margin: 20px;
+    background-image: url(/img/calabresa2.jpg);
+    background-size: cover;
+    opacity: 20%;
+    
+
+}
+
+.txp1{
+
+position: absolute;
+top: 170px;
+left: 160px;
+opacity: 100%;
+width: 500px;
+height: 300px;
+border-radius: 15px;
+text-align: center;
+
+font-size: 70px;
+
+}
+
+.imgp1{
+
+    position: absolute;
+    opacity: 10%;
+    height: 560px;
+    width: 800px;
+    border-radius: 20px;
+    margin: 20px;
+    background-image: url(/img/calabresa2.jpg);
+    
+    transition-timing-function: ease;
+    transition-duration: 2s;
+}
+
+.imgp1:hover{
+
+    border-radius: 20px;
+    width: 630px;
+    height: 560px;
+    text-align: center;
+    transform: translateX(840px);
+    background-image: url(/img/calabresa2.jpg);
+    opacity: 100%;
+
+}
+
+
+
+
+
+.pizza2{
+
+    display: flex;
+    background-color: rgb(215, 209, 209);
+    width: 100vw;
+    height: 600px;
+    position: relative;
+}
+
+.infopizza2{
+
+    position: absolute;
+    background-image: url(/img/pizza-pizzaria.jpg);
+    background-size: cover;
+    opacity: 20%;
+    height: 560px;
+    width: 800px;
+    right: 13px;
+    border-radius: 15px;
+    margin: 20px;
+    
+    
+}
+
+
+.txp2{
+
+    position: absolute;
+    top: 170px;
+    right: 160px;
+    opacity: 100%;
+    width: 500px;
+    height: 300px;
+    border-radius: 15px;
+    text-align: center;
+    
+    font-size: 70px;
+    
+}
+
+.imgp2{
+
+    position: absolute;
+    border-radius: 15px;
+    width: 800px;
+    height: 560px;
+    text-align: center;
+    background-image: url(/img/pizza-pizzaria.jpg);
+    background-size: cover;
+    opacity: 10%;
+    margin: 20px;
+    right: 13px;
+
+    transition-timing-function: ease;
+    transition-duration: 2s;
+    
+
+}
+
+.imgp2:hover{
+
+    border-radius: 20px;
+    width: 630px;
+    height: 560px;
+    text-align: center;
+    background-image: url(/img/pizza-pizzaria.jpg);
+    background-size: cover;
+    opacity: 100%;
+    margin: 20px;
+    right: -13px;
+    transform: translateX(-860px);
+    
+
+}
