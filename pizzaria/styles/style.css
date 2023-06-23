@@ -232,7 +232,7 @@ body{
 
 .txp2{
     position: absolute;
-    top: 170px;
+    top: 110px;
     /*right: 160px;*/
     right: 935px;                                   /*texto do lado direito*/
     opacity: 100%;                                                          
@@ -547,4 +547,14 @@ body{
     margin-top: 10px;
     width: 70px;
     height: 20px;
+}
+
+#pedir{
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #905448;
+    color: white;
+    font-size: 20px;
 }
